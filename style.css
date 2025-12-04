@@ -1,0 +1,36 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#topbar {
+    background-color: lightpink;
+    grid-area: head;
+}
+
+#sidebar {
+    background-color: lightskyblue;
+    grid-area: side;
+}
+
+#content {
+    background-color: plum;
+    grid-area: cont;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "head head head head head"
+    "side cont cont cont cont"
+    "side cont cont cont cont"
+    "side cont cont cont cont"
+    ;
+    width: 100%;
+    height: 100%;
+    background-color: lightgreen;
+}
